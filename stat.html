@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATISTICAL</title>
+    <link rel="stylesheet" href="stat.css">
+        <!-- Boxicons CDN Link -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <!-- Google Charts API -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <img src="logo.png" alt="Superstore Logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-folder-open"></i>
+              <span class="links_name">Source</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="bx bx-bar-chart-alt-2"></i>
+              <span class="links_name">Statistical</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-user-circle"></i>
+              <span class="links_name">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <header>
+        <h1 class="Statistical">STATISTICAL</h1>
+      </header>
+
+      <main class="content">
+        <section class="dashboard-topprofit">
+            <div class="dashboard-heading">
+                <h1 class="Dashboard">DASHBOARD</h1>
+                <div class="boxes">
+                  <div class="box">
+                      <p>Total Customer <br />793</p>
+                  </div>
+                  <div class="box">
+                      <p>Revenue <br />$ 2.297.201</p>
+                  </div>
+                  <div class="box">
+                      <p>Profit Margin <br />286.397</p>
+                  </div>
+                </div>
+              </div>
+
+               <!-- segmen topsales -->
+              <div class="top-sales">
+                <DIV class="kotak-topsales">
+                    <h3 class="heading-topsales">Top Sales City</h3>
+                    <div class="pie-chart">
+                        <div id="piechart" style="width: 400px; height: 286.4px; "></div>
+                    </div>
+                </DIV>
+                <DIV class="kotak-topsales">
+                    <h3 class="heading-topsales">Top Sales of Sub Category Product by Year</h3>
+                    <div class="tabel1">
+                        <table>
+                            <tr>
+                              <th></th>
+                              <th>Sub Category</th>
+                              <th>Year</th>
+                              <th>Sales</th>
+                            </tr>
+                            <tr>
+                              <td>1.</td>
+                              <td>Phones</td>
+                              <td>2017</td>
+                              <td>105341</td>
+                            </tr>
+                            <tr>
+                              <td>2.</td>
+                              <td>Chairs</td>
+                              <td>2017</td>
+                              <td>95554</td>
+                            </tr>
+                            <tr>
+                              <td>3.</td>
+                              <td>Chairs</td>
+                              <td>2016</td>
+                              <td>83919</td>
+                            </tr>
+                            <tr>
+                              <td>4.</td>
+                              <td>Phones</td>
+                              <td>2016</td>
+                              <td>78962</td>
+                            </tr>
+                            <tr>
+                              <td>5.</td>
+                              <td>Phones</td>
+                              <td>2014</td>
+                              <td>77391</td>
+                            </tr>
+                            <tr>
+                              <td>6.</td>
+                              <td>Chairs</td>
+                              <td>2014</td>
+                              <td>77242</td>
+                            </tr>
+                            <tr>
+                              <td>7.</td>
+                              <td>Binders</td>
+                              <td>2017</td>
+                              <td>72788</td>
+                            </tr>
+                            <tr>
+                              <td>8.</td>
+                              <td>Chairs</td>
+                              <td>2015</td>
+                              <td>71735</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Storage</td>
+                                <td>2017</td>
+                                <td>69678</td>
+                              </tr>
+                              <tr>
+                                <td>10.</td>
+                                <td>Phones</td>
+                                <td>2015</td>
+                                <td>68314</td>
+                              </tr>
+                              <tr>
+                                <td>11.</td>
+                                <td>Copiers</td>
+                                <td>2017</td>
+                                <td>62899</td>
+                              </tr>
+                          </table>
+                    </div>
+                </DIV>
+                <DIV class="kotak-topsales1">
+
+                </DIV>
+              </div>
+
+              <!--segmen dropdown-->
+            <div class="dropdownnn">
+              <div class="all1"></div>
+              <div class="all2"></div>
+              <div class="alldropdown">
+                <div class="dropdown">
+                    <div class="select">
+                      <span class="selected">Year</span>
+                      <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="#">2014</a></li>
+                      <li><a href="#">2015</a></li>
+                      <li><a href="#">2016</a></li>
+                      <li><a href="#">2017</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <div class="select">
+                      <span class="selected">Region</span>
+                      <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="">Central</a></li>
+                      <li><a href="#">East</a></li>
+                      <li><a href="#">South</a></li>
+                      <li><a href="#">West</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <div class="select">
+                      <span class="selected">City</span>
+                      <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="">2014</a></li>
+                      <li><a href="#">2015</a></li>
+                      <li><a href="#">2016</a></li>
+                      <li><a href="#">2017</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <div class="select">
+                      <span class="selected">Segment</span>
+                      <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="">consumer</a></li>
+                      <li><a href="#">corporate</a></li>
+                      <li><a href="#">Home office</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <div class="select">
+                      <span class="selected">Sub-Category</span>
+                      <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="">Accessories</a></li>
+                      <li><a href="#">Appliances</a></li>
+                      <li><a href="#">Art</a></li>
+                      <li><a href="#">Binders</a></li>
+                      <li><a href="#">Bookcases</a></li>
+                      <li><a href="#">Chairs</a></li>
+                      <li><a href="#">Copiers</a></li>
+                      <li><a href="#">Envelopes</a></li>
+                      <li><a href="#">Fasteners</a></li>
+                      <li><a href="#">Furnishings</a></li>
+                      <li><a href="#">Labels</a></li>
+                      <li><a href="#">Machines</a></li>
+                      <li><a href="#">Paper</a></li>
+                      <li><a href="#">Phones</a></li>
+                      <li><a href="#">Storages</a></li>
+                      <li><a href="#">Supplies</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--section avg-->
+              <div class="avg">
+                <DIV class="kotak-avg">
+                    <h3 class="heading-avg">Average Delivery by Category in Los Angeles</h3>
+                </DIV>
+                <DIV class="kotak-avg">
+                    <h3 class="heading-avg">Return On Investment</h3>
+                    <div class="tabel2">
+                        <table>
+                            <tr>
+                              <th>No.</th>
+                              <th>Product Name</th>
+                              <th>ROI</th>
+                            </tr>
+                            <tr>
+                              <td>1.</td>
+                              <td>I.R.I.S IRISCard Anywhere 5 Card Scanner</td>
+                              <td>4,33</td>
+                            </tr>
+                            <tr>
+                              <td>2.</td>
+                              <td>Honeywell Enviracaire Portable HEPA Air Cleaner for up to 10 x 16 Room</td>
+                              <td>2,03</td>
+                            </tr>
+                            <tr>
+                              <td>3.</td>
+                              <td>Honeywell Quietcare HEPA Air Cleaner</td>
+                              <td>2,02</td>
+                            </tr>
+                            <tr>
+                              <td>4.</td>
+                              <td>Alphabetical Labels for Top Tab Filing</td>
+                              <td>1,88</td>
+                            </tr>
+                            <tr>
+                              <td>5.</td>
+                              <td>Avery 505</td>
+                              <td>1,88</td>
+                            </tr>
+                            <tr>
+                              <td>6.</td>
+                              <td>Avery 490</td>
+                              <td>1,88</td>
+                            </tr>
+                            <tr>
+                              <td>7.</td>
+                              <td>Recycled Interoffice Envelopes with String and Button Closure, 10 x 13</td>
+                              <td>1,88</td>
+                            </tr>
+                            <tr>
+                              <td>8.</td>
+                              <td>Memo Book, 100 Message Capacity, 5 3/8” x 11”</td>
+                              <td>1,88</td>
+                            </tr>
+                            <tr>
+                              <td>9.</td>
+                              <td>netTALK DUO VoIP Telephone Service</td>
+                              <td>1,88</td>
+                            </tr>
+                          </table>
+              
+                    </div>
+                </DIV>
+                <DIV class="kotak-avg">
+                    <h3 class="heading-avg">Average Profit by Year</h3>
+                </DIV>
+              </div>
+                      
+              <!--section top profit-->
+              <div class="top-profit">
+                <DIV class="kotak-topprofit">
+                    <h3 class="heading-topprofit">Top Profit by City</h3>
+                </DIV>
+                <DIV class="kotak-topprofit1">
+                    <h3 class="heading-topprofit">Top Profit by Sub Category</h3>
+                </DIV>
+        </section>
+
+        <!--interpretasi avg profit-->
+        <section class="avg-profit">
+            <div class="kotak-int1">
+                <div>
+                    <h3 class="heading-int-avgprofit">Average Profit by Year</h3>
+                </div>
+            </div>
+            <div class="kotak-int1">
+                <div class="head-int-avgprofit">
+                    <h1>Average Profit Growth by Year</h1>
+                </div>
+                <div class="box-interpretasi-avg">
+                    <p>Growth Rate = ((Present-Past)Past) x 100</p>
+                    <p>
+                      Berdasarkan analisa
+                      <li>2015 : 24,5%</li>
+                      <li>2016 : 32,8%</li>
+                      <li>2017 : 14,2%</li>
+                    </p>
+                    <p>In terms of overall profit growth, 2016 showed the highest profit growth rate of 32.8%.</p>
+                  </div>
+            </div>
+
+        </section>
+
+        <!--interpretasi ROI-->
+        <section class="interpretasi-roi">
+            <div class="kotak-int2">
+                <h1 class="heading-int-roi">Return On Investment</h1>
+                <div class="tabel3">
+                    <table>
+                        <tr>
+                          <th>No.</th>
+                          <th>Product Name</th>
+                          <th>ROI</th>
+                        </tr>
+                        <tr>
+                          <td>1.</td>
+                          <td>I.R.I.S IRISCard Anywhere 5 Card Scanner</td>
+                          <td>4,33</td>
+                        </tr>
+                        <tr>
+                          <td>2.</td>
+                          <td>Honeywell Enviracaire Portable HEPA Air Cleaner for up to 10 x 16 Room</td>
+                          <td>2,03</td>
+                        </tr>
+                        <tr>
+                          <td>3.</td>
+                          <td>Honeywell Quietcare HEPA Air Cleaner</td>
+                          <td>2,02</td>
+                        </tr>
+                        <tr>
+                          <td>4.</td>
+                          <td>Alphabetical Labels for Top Tab Filing</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>5.</td>
+                          <td>Avery 505</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>6.</td>
+                          <td>Avery 490</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>7.</td>
+                          <td>Recycled Interoffice Envelopes with String and Button Closure, 10 x 13</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>8.</td>
+                          <td>Memo Book, 100 Message Capacity, 5 3/8” x 11”</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>9.</td>
+                          <td>netTALK DUO VoIP Telephone Service</td>
+                          <td>1,88</td>
+                        </tr>
+                        <tr>
+                          <td>10.</td>
+                          <td>Unpadded Memo Slips</td>
+                          <td>1,88</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            <div class="kotak-int2">
+                <div class="head-int-roi">
+                    <h1>Return On Investment</h1>
+                </div>
+                <div class="box-interpretasi-roi">
+                    <p>
+                        Based on analytics
+                        <li>The highest ROI with value of 4.33 is "I.R.I.S IRISCard Anywhere 5 Card Scanner" </li>
+                        <li>The lowest ROI with value of -3.43 is "Eureka Disposable Bags for Sanitaire Vibra Groomer I Upright Vac"</li>
+                    </p>
+                    <p>Increase discounts for products with category "Technology", especially for products with positive ROI values.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--interpretasi avg delivery-->
+        <section class="avg-delivery">
+            <div class="kotak-int3">
+                <h1 class="heading-int-dlv">Average Delivery Times by Category in Los Angeles</h1>
+            </div>
+            <div class="kotak-int3">
+                <div class="head-int-dlv">
+                    <h1>Average Delivery Duration by Mode and Segment in Los Angeles City</h1>
+                </div>
+                <div class="box-interpretasi-dlv">
+                    <p class="judul">Average duration = sum of duration per segment / 3</p>
+                    <div class="isi">
+                        <div class="isi-kiri">
+                            <p>
+                              Based on analytics
+                              <li>Standard Class : 5,05 (6 days)</li>
+                              <li>Second Class : 3,11 (4 days)</li>
+                              <li>First Class : 2,06 (3 days)</li>
+                              <li>Same Day : 0,36 (4 hours)</li>
+                            </p>
+                        </div>
+                        <div class="isi-kanan">
+                            <p>For all customer segments, the quickest product delivery is through Same Day shipping mode. The sequence of average delivery time based on the quickest to the longest shipping mode is Same Day, First Class, Second Class, and Standard Class.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--interpretasi kebutuhan-->
+        <section class="kebutuhan">
+            <h1 class="kebutuhan-heading">Product Requirements and Preferences</h1>
+            <div class="tabel-kebutuhan">
+              <table class="tabel4">
+                <tr>
+                  <th>Row</th>
+                  <th>Customer_ID</th>
+                  <th>Product_ID</th>
+                  <th>Product_Name</th>
+                  <th>Sub_Category</th>
+                  <th>Total_Purchases</th>
+                  <th>Total_Purchases_Technology</th>
+                  <th>Total_Purchases_Unwanted</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>RH-19510</td>
+                  <td>abcd-123456789</td>
+                  <td>Kingston Digital DataTraveler 16GB USB 2.0</td>
+                  <td>Accessories</td>
+                  <td>13</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>RH-19510</td>
+                    <td>abcd-123456789</td>
+                    <td>Kingston Digital DataTraveler 16GB USB 2.0</td>
+                    <td>Accessories</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>RH-19510</td>
+                    <td>abcd-123456789</td>
+                    <td>Kingston Digital DataTraveler 16GB USB 2.0</td>
+                    <td>Accessories</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>RH-19510</td>
+                    <td>abcd-123456789</td>
+                    <td>Kingston Digital DataTraveler 16GB USB 2.0</td>
+                    <td>Accessories</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>2</td>
+                  </tr>
+              </table>
+            </div>
+            <div class="int-kebutuhan">
+                <div class="box-kebutuhan1">
+                    <p>Based on analytics</p>
+              <li>The "Kingston Digital DataTraveler" product is the most preferred product.</li>
+              <li>"Plantronics CS510" is the least preferred product.</li>
+                </div>
+                <div class="box-kebutuhan2">
+                    <p>Based on the results, those products that are least demanded can be used as the priority target in the marketing strategy to increase demand for these products.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--interpretasi clustering-->
+        <section class="clustering">
+            <h1 class="clustering-heading">Clustering Mode of Best Seller Products by Sales</h1>
+            <div class="kotak-clustering">
+                <div class="kotak-int4">
+                  <div class="tabel5">
+                    <table>
+                      <tr>
+                        <th>Row</th>
+                        <th>Sub_Category</th>
+                        <th>Quantity</th>
+                        <th>Kelompok</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Binders</td>
+                        <td>5974</td>
+                        <td>Tinggi</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Paper</td>
+                        <td>5178</td>
+                        <td>Tinggi</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Furnishings</td>
+                        <td>3553</td>
+                        <td>Tinggi</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Phones</td>
+                        <td>3289</td>
+                        <td>Tinggi</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Storage</td>
+                        <td>3158</td>
+                        <td>Tinggi</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Art</td>
+                        <td>3000</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Accessories</td>
+                        <td>2976</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Chairs</td>
+                        <td>2356</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Appliances</td>
+                        <td>1729</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Labels</td>
+                        <td>1400</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Tables</td>
+                        <td>1241</td>
+                        <td>Menengah</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Fasteners</td>
+                        <td>914</td>
+                        <td>Menengah</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="kotak-int4">
+                    <div class="box-int-clustering">
+                      <p>Based on analytics</p>
+                       <ul>
+                          <li>High: 5 Sub Category (21rb Qty)</li>
+                          <li>Medium: 8 Sub Category (15rb Qty)</li>
+                           <li>Low: 4 Sub Category (2rb Qty)</li>
+                       </ul>
+                      <p>The results indicate that "Binders" is the highest selling
+                          subcategory, hence categorized as the most selling products mode.</p>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="group">
+                <div class="group1">
+                  <p>1</p>
+                </div>
+                <div class="group2">
+                  <table border="1">
+                    <tr>
+                      <th>Group</th>
+                      <th>Profit</th>
+                      <th>Sales</th>
+                    </tr>
+                    <tr>
+                      <td>High</td>
+                      <td>143129.033</td>
+                      <td>927447.765</td>
+                    </tr>
+                    <tr>
+                      <td>Medium</td>
+                      <td>88927.062</td>
+                      <td>869432.900</td>
+                    </tr>
+                    <tr>
+                      <td>Low</td>
+                      <td>54340.926</td>
+                      <td>500320.195</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+  
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>@Copyright</p>
+        <h1>Section Palembang</h1>
+        <h2>Team 13</h2>
+      </footer>
+
+      <script src="stat.js"></script>
+</body>
+</html>
