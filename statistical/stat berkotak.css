@@ -1,0 +1,839 @@
+/* Googlefont Poppins CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*sidebar*/
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px; /* Lebar tetap */
+  background: #b22222;
+}
+
+.sidebar .logo-details img {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .nav-links {
+  margin-top: 10px;
+  height: 70%;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 60px;
+  margin: 40px 0;
+}
+
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active {
+  background: #8b0000;
+}
+
+.sidebar .nav-links li a:hover {
+  background: #750000;
+  transition: 0.2s ease-out;
+}
+
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar .nav-links li a .links_name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.home-section {
+  position: relative;
+  background: #f5f5f5;
+  height: 80px;
+  width: calc(100% - 240px); /* Sesuaikan dengan lebar sidebar tetap */
+  left: 240px; /* Sesuaikan dengan lebar sidebar tetap */
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.home-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px); /* Sesuaikan dengan lebar sidebar tetap */
+  left: 240px; /* Sesuaikan dengan lebar sidebar tetap */
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.home-section nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.home-section nav .profile-details {
+  display: flex;
+  align-items: center;
+  background: #f5f6fa;
+  border: 2px solid #efeef1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+
+.home-section .home-content {
+  position: relative;
+  padding-top: 104px;
+}
+/*sidebar end*/
+
+/*background*/
+body {
+  background-color: #e8e8e8;
+}
+/*background end*/
+
+/*box dashboard-topprofit*/
+.dashboard-topprofit {
+  background-color: #ffff;
+  width: calc(100% - 300px);
+  height: 1270px;
+  margin-left: 275px;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-left: 49px;
+  border-radius: 35px;
+  box-shadow: 18px -15px 0px #c5c1c1;
+}
+/*box dashboard-topprofit end*/
+
+/*box dashboard*/
+.Dashboard {
+  color: #717171;
+  font-size: 32px;
+  margin-top: 21.88px;
+  letter-spacing: 1px;
+}
+
+.dashboard-heading {
+  display: flex;
+  width: 100%;
+}
+
+.boxes {
+  display: flex;
+  gap: 35px;
+  width: 100%;
+  margin-left: 55px;
+  padding-top: 15px;
+  margin-right: 50px;
+}
+
+.box {
+  background-color: #ab0319;
+  border-radius: 20px;
+  flex: 2;
+  height: 59px;
+  color: #f8f8f8;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+/*box dashboard end*/
+
+/*top sales*/
+.top-sales {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.top-sales .kotak-topsales {
+  flex: 2;
+  height: 318px;
+  margin-right: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.top-sales .kotak-topsales1 {
+  flex: 1;
+  height: 318px;
+  margin-right: 50px;
+}
+
+.pie-chart {
+  margin-left: 60px;
+  margin-top: -50px;
+}
+
+/*tabel1*/
+.tabel1 {
+  overflow-y: auto;
+  max-height: 270px;
+}
+
+.tabel1 table {
+  width: 100%;
+  background-color: #ab0319;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tabel1 thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #ab0319;
+}
+
+.tabel1 table th {
+  text-align: center;
+  color: #fff;
+  background-color: #ab0319;
+}
+
+.tabel1 table td {
+  text-align: center;
+  color: #fff;
+}
+/*tabel1 end*/
+
+.heading-topsales {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.pie-chart {
+  align-items: center;
+  justify-content: center;
+}
+/*top sales end*/
+
+/*dropdown*/
+.dropdownnn {
+  display: flex;
+  margin-top: -339px;
+  gap: 20px;
+}
+
+.alldropdown {
+  flex: 1;
+  gap: 3px;
+  display: grid;
+  margin-right: 50px;
+}
+
+.all1,
+.all2 {
+  flex: 2;
+}
+
+.dropdown {
+  min-width: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background-color: #ab0319;
+  border: 2px #ab0319 solid;
+  align-items: center;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked {
+  border: 2px #dd0420 solid;
+  box-shadow: 0 0 12px #dd0420;
+}
+.select:hover {
+  background-color: #dc0521;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid white;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #dc0521;
+  border: 1px #dc0a23 solid;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #e6e6e6;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+a {
+  color: white;
+}
+.menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0.3 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none; /* Tambahkan baris ini */
+}
+
+.menu li:hover a {
+  background-color: #770413;
+}
+
+.menu li:hover {
+  background-color: #770413;
+}
+
+.active {
+  background: #a8061b;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+/*section avg*/
+.avg {
+  display: flex;
+  margin-top: 40px;
+}
+
+.kotak-avg {
+  flex: 1;
+  height: 318px;
+  margin-right: 50px;
+}
+
+.heading-avg {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*tabel2*/
+.tabel2 {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+.tabel2 table {
+  width: 100%;
+  background-color: #ab0319;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tabel2 thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #ab0319;
+}
+
+.tabel2 table th {
+  text-align: center;
+  color: #fff;
+  background-color: #ab0319;
+}
+
+.tabel2 table td {
+  text-align: justify;
+  color: #fff;
+}
+/*tabel2 end*/
+
+/*section avg end*/
+
+/*section top profit*/
+.top-profit {
+  display: flex;
+  margin-top: 40px;
+}
+
+.kotak-topprofit {
+  flex: 1;
+  height: 318px;
+  margin-right: 50px;
+}
+
+.kotak-topprofit1 {
+  flex: 1;
+  height: 318px;
+  margin-right: 50px;
+}
+
+.heading-topprofit {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.linechart2 {
+  width: 80%;
+}
+/*section top profit end*/
+
+/*interpretasi avg profit*/
+.avg-profit {
+  margin-top: 70px;
+  margin-left: 275px;
+  display: flex;
+  padding-left: 49px;
+  width: calc(100% - 275px);
+  right: 0;
+}
+
+.kotak-int1 {
+  flex: 1;
+  height: 318px;
+  margin-right: 25px;
+}
+
+.heading-int-avgprofit {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.head-int-avgprofit {
+  font-size: 18px;
+  color: #ab0319;
+}
+
+.box-interpretasi-avg {
+  margin-top: 52px;
+  background-color: #ab0319;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 30px;
+  width: 80%;
+  text-align: justify;
+}
+/*interpretasi avg profit end*/
+
+/*interpretasi ROI*/
+.interpretasi-roi {
+  background-color: #ffff;
+  width: calc(100% - 300px);
+  height: 700px;
+  margin-left: 275px;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-left: 49px;
+  border-radius: 35px;
+  box-shadow: 18px -15px 0px #c5c1c1;
+}
+
+.kotak-int2 {
+  flex: 1;
+  height: 318px;
+  margin-right: 25px;
+}
+
+.heading-int-roi {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.head-int-roi {
+  font-size: 18px;
+  color: #ab0319;
+  text-align: center;
+}
+
+.box-interpretasi-roi {
+  margin-top: 52px;
+  background-color: #ab0319;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 30px;
+  line-height: 27px;
+}
+
+/*tabel3*/
+.tabel3 {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+.tabel3 table {
+  width: 100%;
+  background-color: #ab0319;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tabel3 thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #ab0319;
+}
+
+.tabel3 table th {
+  text-align: center;
+  color: #fff;
+  background-color: #ab0319;
+}
+
+.tabel3 table td {
+  text-align: justify;
+  color: #fff;
+}
+/*interpretasi ROI end*/
+
+/*interpretasi avg delivery*/
+.avg-delivery {
+  margin-top: 70px;
+  margin-left: 275px;
+  display: flex;
+  padding-left: 49px;
+  width: calc(100% - 275px);
+  right: 0;
+}
+
+.kotak-int3 {
+  flex: 1;
+  height: 318px;
+  margin-right: 25px;
+}
+
+.heading-int-dlv {
+  background-color: #670000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.head-int-dlv {
+  font-size: 18px;
+  color: #ab0319;
+  text-align: center;
+  line-height: 25px;
+}
+
+.box-interpretasi-dlv {
+  margin-top: 20px;
+  background-color: #ab0319;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.isi {
+  display: flex;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.isi-kiri {
+  flex: 1;
+  text-align: justify;
+}
+
+.isi-kanan {
+  flex: 1;
+  text-align: justify;
+}
+/*interpretasi avg delivery end*/
+
+/*kebutuhan*/
+.kebutuhan {
+  background-color: #ffff;
+  width: calc(100% - 300px);
+  height: 600px;
+  margin-left: 275px;
+  margin-top: 120px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 35px;
+  box-shadow: 18px -15px 0px #c5c1c1;
+}
+
+.kebutuhan-heading {
+  font-size: 25px;
+  text-align: center;
+  top: 40px;
+  color: #ab0319;
+}
+
+.tabel-kebutuhan {
+  border: 1px solid black;
+  height: 261px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.int-kebutuhan {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  color: #ffff;
+  padding: 5px;
+  font-size: 15px;
+  height: max-content;
+}
+
+.box-kebutuhan1 {
+  flex: 1;
+  background-color: #ab0319;
+  height: 153px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.box-kebutuhan2 {
+  flex: 1;
+  background-color: #ab0319;
+  height: 153px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+/*tabel 4*/
+.tabel-kebutuhan {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+.tabel4 {
+  width: 100%;
+  background-color: #ffff;
+  color: black;
+  font-size: 15px;
+}
+
+.tabel4 thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #ffff;
+}
+
+.tabel4 th,
+.tabel4 td {
+  text-align: center;
+  color: black;
+  background-color: #ffff;
+}
+
+.tabel4 td {
+  text-align: center;
+  color: black;
+}
+/*kebutuhan end*/
+
+/*clustering*/
+.clustering {
+  background-color: #ffff;
+  width: calc(100% - 300px);
+  height: 600px;
+  margin-left: 275px;
+  margin-top: 120px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 35px;
+  box-shadow: 18px -15px 0px #c5c1c1;
+}
+
+.clustering-heading {
+  font-size: 25px;
+  text-align: center;
+  color: #ab0319;
+}
+
+.kotak-clustering {
+  display: flex;
+  margin-top: 20px;
+}
+
+.kotak-int4 {
+  flex: 1;
+  height: 318px;
+  margin-right: 50px;
+}
+
+/*tabel5*/
+.tabel5 {
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+.tabel5 table {
+  width: 100%;
+  background-color: #ab0319;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tabel5 thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #ab0319;
+}
+
+.tabel5 table th {
+  text-align: center;
+  color: #fff;
+  background-color: #ab0319;
+}
+
+.tabel5 table td {
+  text-align: center;
+  color: #fff;
+}
+
+/*tabel group*/
+.group {
+  display: flex;
+  margin-right: 50px;
+  gap: 50px;
+  margin-top: -316px;
+}
+
+.group1 {
+  flex: 1;
+}
+
+.group2 {
+  flex: 1;
+}
+
+.group2 table {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.group2 table th {
+  text-align: center;
+}
+
+.group2 table td {
+  text-align: center;
+}
+
+.box-int-clustering {
+  background-color: #a8061b;
+  margin-top: 140px;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffff;
+  text-align: justify;
+}
+
+.box-int-clustering li {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #b22222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+  overflow: hidden;
+  border-left: 255px solid #efeef1;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 15px 5px;
+  }
+}

@@ -1,0 +1,342 @@
+[
+ {
+  "Sub Category": "Phones",
+  "Year": 2017,
+  "Sales": 105341
+ },
+ {
+  "Sub Category": "Chairs",
+  "Year": 2017,
+  "Sales": 95554
+ },
+ {
+  "Sub Category": "Chairs",
+  "Year": 2016,
+  "Sales": 83919
+ },
+ {
+  "Sub Category": "Phones",
+  "Year": 2016,
+  "Sales": 78962
+ },
+ {
+  "Sub Category": "Phones",
+  "Year": 2014,
+  "Sales": 77391
+ },
+ {
+  "Sub Category": "Chairs",
+  "Year": 2014,
+  "Sales": 77242
+ },
+ {
+  "Sub Category": "Binders",
+  "Year": 2017,
+  "Sales": 72788
+ },
+ {
+  "Sub Category": "Chairs",
+  "Year": 2015,
+  "Sales": 71735
+ },
+ {
+  "Sub Category": "Storage",
+  "Year": 2017,
+  "Sales": 69678
+ },
+ {
+  "Sub Category": "Phones",
+  "Year": 2015,
+  "Sales": 68314
+ },
+ {
+  "Sub Category": "Copiers",
+  "Year": 2017,
+  "Sales": 62899
+ },
+ {
+  "Sub Category": "Machines",
+  "Year": 2014,
+  "Sales": 62023
+ },
+ {
+  "Sub Category": "Tables",
+  "Year": 2017,
+  "Sales": 60894
+ },
+ {
+  "Sub Category": "Tables",
+  "Year": 2016,
+  "Sales": 60833
+ },
+ {
+  "Sub Category": "Accessories",
+  "Year": 2017,
+  "Sales": 59946
+ },
+ {
+  "Sub Category": "Storage",
+  "Year": 2016,
+  "Sales": 58789
+ },
+ {
+  "Sub Category": "Machines",
+  "Year": 2016,
+  "Sales": 55907
+ },
+ {
+  "Sub Category": "Storage",
+  "Year": 2014,
+  "Sales": 50329
+ },
+ {
+  "Sub Category": "Binders",
+  "Year": 2016,
+  "Sales": 49683
+ },
+ {
+  "Sub Category": "Copiers",
+  "Year": 2016,
+  "Sales": 49599
+ },
+ {
+  "Sub Category": "Tables",
+  "Year": 2014,
+  "Sales": 46088
+ },
+ {
+  "Sub Category": "Storage",
+  "Year": 2015,
+  "Sales": 45048
+ },
+ {
+  "Sub Category": "Machines",
+  "Year": 2017,
+  "Sales": 43545
+ },
+ {
+  "Sub Category": "Binders",
+  "Year": 2014,
+  "Sales": 43488
+ },
+ {
+  "Sub Category": "Appliances",
+  "Year": 2017,
+  "Sales": 42927
+ },
+ {
+  "Sub Category": "Accessories",
+  "Year": 2016,
+  "Sales": 41896
+ },
+ {
+  "Sub Category": "Accessories",
+  "Year": 2015,
+  "Sales": 40524
+ },
+ {
+  "Sub Category": "Tables",
+  "Year": 2015,
+  "Sales": 39150
+ },
+ {
+  "Sub Category": "Bookcases",
+  "Year": 2015,
+  "Sales": 38544
+ },
+ {
+  "Sub Category": "Binders",
+  "Year": 2015,
+  "Sales": 37453
+ },
+ {
+  "Sub Category": "Bookcases",
+  "Year": 2017,
+  "Sales": 30024
+ },
+ {
+  "Sub Category": "Furnishings",
+  "Year": 2017,
+  "Sales": 28915
+ },
+ {
+  "Sub Category": "Furnishings",
+  "Year": 2016,
+  "Sales": 27874
+ },
+ {
+  "Sub Category": "Machines",
+  "Year": 2015,
+  "Sales": 27764
+ },
+ {
+  "Sub Category": "Paper",
+  "Year": 2017,
+  "Sales": 27695
+ },
+ {
+  "Sub Category": "Bookcases",
+  "Year": 2016,
+  "Sales": 26275
+ },
+ {
+  "Sub Category": "Copiers",
+  "Year": 2015,
+  "Sales": 26179
+ },
+ {
+  "Sub Category": "Appliances",
+  "Year": 2016,
+  "Sales": 26050
+ },
+ {
+  "Sub Category": "Accessories",
+  "Year": 2014,
+  "Sales": 25014
+ },
+ {
+  "Sub Category": "Appliances",
+  "Year": 2015,
+  "Sales": 23241
+ },
+ {
+  "Sub Category": "Furnishings",
+  "Year": 2015,
+  "Sales": 21090
+ },
+ {
+  "Sub Category": "Paper",
+  "Year": 2016,
+  "Sales": 20662
+ },
+ {
+  "Sub Category": "Bookcases",
+  "Year": 2014,
+  "Sales": 20037
+ },
+ {
+  "Sub Category": "Supplies",
+  "Year": 2017,
+  "Sales": 16049
+ },
+ {
+  "Sub Category": "Appliances",
+  "Year": 2014,
+  "Sales": 15314
+ },
+ {
+  "Sub Category": "Paper",
+  "Year": 2015,
+  "Sales": 15288
+ },
+ {
+  "Sub Category": "Paper",
+  "Year": 2014,
+  "Sales": 14835
+ },
+ {
+  "Sub Category": "Supplies",
+  "Year": 2014,
+  "Sales": 14394
+ },
+ {
+  "Sub Category": "Supplies",
+  "Year": 2016,
+  "Sales": 14278
+ },
+ {
+  "Sub Category": "Furnishings",
+  "Year": 2014,
+  "Sales": 13826
+ },
+ {
+  "Sub Category": "Copiers",
+  "Year": 2014,
+  "Sales": 10850
+ },
+ {
+  "Sub Category": "Art",
+  "Year": 2017,
+  "Sales": 8863
+ },
+ {
+  "Sub Category": "Art",
+  "Year": 2015,
+  "Sales": 6237
+ },
+ {
+  "Sub Category": "Art",
+  "Year": 2014,
+  "Sales": 6058
+ },
+ {
+  "Sub Category": "Art",
+  "Year": 2016,
+  "Sales": 5961
+ },
+ {
+  "Sub Category": "Envelopes",
+  "Year": 2016,
+  "Sales": 4730
+ },
+ {
+  "Sub Category": "Envelopes",
+  "Year": 2015,
+  "Sales": 4512
+ },
+ {
+  "Sub Category": "Labels",
+  "Year": 2017,
+  "Sales": 3861
+ },
+ {
+  "Sub Category": "Envelopes",
+  "Year": 2014,
+  "Sales": 3856
+ },
+ {
+  "Sub Category": "Envelopes",
+  "Year": 2017,
+  "Sales": 3379
+ },
+ {
+  "Sub Category": "Labels",
+  "Year": 2015,
+  "Sales": 2956
+ },
+ {
+  "Sub Category": "Labels",
+  "Year": 2014,
+  "Sales": 2841
+ },
+ {
+  "Sub Category": "Labels",
+  "Year": 2016,
+  "Sales": 2827
+ },
+ {
+  "Sub Category": "Supplies",
+  "Year": 2015,
+  "Sales": 1952
+ },
+ {
+  "Sub Category": "Fasteners",
+  "Year": 2016,
+  "Sales": 960
+ },
+ {
+  "Sub Category": "Fasteners",
+  "Year": 2017,
+  "Sales": 858
+ },
+ {
+  "Sub Category": "Fasteners",
+  "Year": 2014,
+  "Sales": 661
+ },
+ {
+  "Sub Category": "Fasteners",
+  "Year": 2015,
+  "Sales": 545
+ }
+]

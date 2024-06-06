@@ -261,8 +261,8 @@ td {
 
 /* Right box */
 .home-content .bottom .top-sales {
-  width: 31%;
-  height: 510px;
+  width: 30%;
+  height: 540px;
   background: #fff;
   margin-top: 20px;
   border-radius: 12px;
@@ -315,8 +315,7 @@ td {
 }
 
 .bottom2 .report1 {
-  width: 40%;
-  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: #fff;
@@ -325,11 +324,11 @@ td {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
   display: block;
+  margin-bottom: 20px;
 }
 
 .bottom2 .report2 {
-  width: 57%;
-  display: block;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: #fff;
@@ -337,14 +336,104 @@ td {
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 .head {
   display: flex;
+  margin: 20px 0;
+}
+.head i {
+  font-size: 50px;
 }
 .bottom2 .doc {
-  width: 95%;
+  width: 90%;
 }
-.bottom2  img {
+/* topSelling */
+.tableTopSelling,
+.TopProductNeedsandPreferences {
+  max-height: 280px;
+  min-height: 280px;
+  overflow-y: scroll;
+}
+
+.tableTopSelling table,
+.TopProductNeedsandPreferences table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.tableTopSelling th,
+.tableTopSelling td,
+.TopProductNeedsandPreferences th,
+.TopProductNeedsandPreferences td {
+  border: 1px solid #ddd;
+  padding: 15px 15px 15px 2px;
+  font-size: 10px;
+}
+
+.tableTopSelling tr:nth-child(even),
+.TopProductNeedsandPreferences tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tableTopSelling tr:nth-child(odd),
+.TopProductNeedsandPreferences tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.tableTopSelling tr:first-child,
+.tableTopSelling th:first-child,
+.tableTopSelling td:first-child {
+  width: 50px;
+}
+
+.tableTopSelling th,
+.TopProductNeedsandPreferences th {
+  color: #000;
+}
+
+#paginationButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#paginationButtons button {
+  margin: 5px 5px 5px 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 500;
+}
+#paginationButtons .active {
+  background-color: #b22222;
+  color: white;
+  border: none;
+}
+
+#paginationButtons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#paginationButtons2 button {
+  margin: 5px 5px 5px 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 500;
+}
+#paginationButtons2 .active {
+  background-color: #b22222;
+  color: white;
+  border: none;
+}
+/* topSelling */
+
+.bottom2 img {
   width: 45px;
 }
 .bottom2 .content {
@@ -354,6 +443,23 @@ td {
 .bottom2 .box-topic {
   font-weight: 600;
   font-size: 18px;
+}
+
+footer {
+  background-color: #b22222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+  overflow: hidden;
+  border-left: 10px solid #efeef1;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 15px 5px;
+  }
 }
 
 /* Responsive Media Query */
@@ -369,7 +475,6 @@ td {
     left: 60px;
   }
   .sidebar.active ~ .home-section {
-    /* width: calc(100% - 220px); */
     overflow: hidden;
     left: 220px;
   }
@@ -382,6 +487,7 @@ td {
     left: 220px;
   }
 }
+
 @media (max-width: 1150px) {
   .home-content .sales-boxes {
     flex-direction: column;
@@ -395,12 +501,18 @@ td {
     margin: 0;
   }
 }
+
 @media (max-width: 1000px) {
   .overview-boxes .box {
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
   }
+  .overview-boxes2 .source .box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
+
 @media (max-width: 700px) {
   nav .sidebar-button .dashboard,
   nav .profile-details .admin_name,
@@ -412,13 +524,27 @@ td {
     min-width: 40px;
   }
   .home-content .sales-boxes .sales-details {
-    width: 560px;
+    width: 100%;
   }
-  .overview-boxes2 .sales-boxes .box {
+  .overview-boxes2 .box {
     display: block;
-    justify-content: space-between;
+  }
+  .overview-boxes2 .box-topic {
+    font-size: 12px;
+  }
+  .overview-boxes2 .right-side {
+    display: block;
+  }
+  .overview-boxes2 .right-side .description {
+    font-size: 10px;
+  }
+  .overview-boxes2 .button a {
+    font-size: 8px;
+    margin-top: 30px;
+    display: block;
   }
 }
+
 @media (max-width: 550px) {
   .overview-boxes .box {
     width: 100%;
@@ -427,13 +553,35 @@ td {
   .sidebar.active ~ .home-section nav .profile-details {
     display: none;
   }
+  .home-section {
+    width: 100%;
+    left: 0;
+  }
+  .home-section nav {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .sidebar.active ~ .home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .home-content .sales-boxes .sales-details {
+    width: 100%;
+    overflow-x: auto;
+  }
 }
+
 @media (max-width: 400px) {
   .sidebar {
-    width: 0;
+    width: 100%;
+    height: auto;
   }
   .sidebar.active {
-    width: 60px;
+    width: 100%;
   }
   .home-section {
     width: 100%;
@@ -450,5 +598,64 @@ td {
   .sidebar.active ~ .home-section nav {
     left: 60px;
     width: calc(100% - 60px);
+  }
+
+  .overview-boxes2 .source {
+    display: block;
+  }
+}
+
+/* Responsive Skill Cards Grid */
+@media (max-width: 1024px) {
+  .skill-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .sidebar.active {
+    width: 100%;
+  }
+  .home-section {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section {
+    width: 100%;
+    left: 0;
+  }
+  .home-section nav {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section nav {
+    width: 100%;
+    left: 0;
+  }
+  .home-content {
+    padding-top: 60px;
+  }
+  .home-content .overview-boxes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .overview-boxes .box,
+  .overview-boxes2 .source .box,
+  .overview-boxes2 .sales-boxes .box {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }

@@ -1,0 +1,350 @@
+/* Googlefont Poppins CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #ab0319;
+  transition: all 0.8s ease-in;
+}
+.sidebar .logo img {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .nav-links {
+  margin-bottom: 10px;
+  height: 70%;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 60px;
+  margin: 40px 0;
+}
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+}
+.sidebar .nav-links li a.active {
+  background: #8b0000;
+}
+.sidebar .nav-links li a:hover {
+  background: #750000;
+  transition: 0.2s ease-out;
+}
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar .nav-links li a .links_name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.home-section {
+  position: relative;
+  background: #e8e8e8;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.home-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 81px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+/* Punyanya Source */
+
+.source-content .ha1 {
+  margin-left: 66px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.source-content .ha1 span {
+  color: #666565;
+}
+
+.home-section .source-content {
+  position: relative;
+  padding-top: 104px;
+}
+.source-content .bottommm {
+  display: flex;
+}
+.source-content .overview-boxes01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.source-content .overview-boxes02 {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+.overview-boxes01 .boxxx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3 - 15px);
+  background: #ab0319;
+  color: #fff;
+  padding: 15px 14px;
+  border-radius: 26px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.overview-boxes02 .sourceee {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.overview-boxes02 .sourceee .boxxx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3 - 15px);
+  background: #ab0319;
+  color: #fff;
+  padding: 15px 14px;
+  border-radius: 26px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.overview-boxes02 .sourceee .boxxx2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3 - 15px);
+  background: #cecece;
+  color: #ffffff;
+  padding: 15px 14px;
+  border-radius: 26px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview-boxes01 .box-topic,
+.overview-boxes02 .boxxx {
+  font-size: 20px;
+}
+.source-content .boxxx .description {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 1px;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+.boxxx .button {
+  display: inline-block;
+  justify-content: flex-end;
+}
+.boxxx .button a {
+  color: #b22222;
+  background: #ffffff;
+  padding: 5px 19px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+.boxxx .button a:hover {
+  background: #b0afaf;
+}
+.kaggle img {
+  border-radius: 100%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+/* table */
+.right-sideee table {
+  width: 228%;
+  border-collapse: collapse;
+}
+
+.right-sideee td {
+  padding: 2px;
+  border: 0px solid #ddd;
+  font-size: 85%;
+}
+
+/* Untuk mengatur agar sel pada kolom 2 dan 3 berada di tengah */
+.right-sideee td:nth-child(2),
+.right-sideee td:nth-child(3) {
+  text-align: center;
+}
+.right-sideee td:nth-child(1) {
+  color: black;
+}
+.right-sideee td:nth-child(2) {
+  color: black;
+}
+.right-sideee td:nth-child(3) {
+  color: #717171;
+}
+
+footer {
+  background-color: #b22222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+  overflow: hidden;
+  border-left: 255px solid #efeef1;
+  width: 100%;
+  top: 0;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 15px 5px;
+  }
+}
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar.active {
+    width: 220px;
+  }
+  .home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section {
+    /* width: calc(100% - 220px); */
+    overflow: hidden;
+    left: 220px;
+  }
+  .home-section nav {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section nav {
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+}
+@media (max-width: 1150px) {
+  .home-content .sales-boxes {
+    flex-direction: column;
+  }
+  .home-content .sales-boxes .box {
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+  }
+  .home-content .sales-boxes .top-sales {
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .overview-boxes .box {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard,
+  nav .profile-details .admin_name,
+  nav .profile-details i {
+    display: none;
+  }
+  .home-section nav .profile-details {
+    height: 50px;
+    min-width: 40px;
+  }
+  .home-content .sales-boxes .sales-details {
+    width: 560px;
+  }
+  .overview-boxes2 .sales-boxes .box {
+    display: block;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .overview-boxes .box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sidebar.active ~ .home-section nav .profile-details {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 0;
+  }
+  .sidebar.active {
+    width: 60px;
+  }
+  .home-section {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .home-section nav {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}

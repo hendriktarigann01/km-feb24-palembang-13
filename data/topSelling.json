@@ -1,0 +1,104 @@
+[
+    {
+        "No": "1",
+        "Sub Category": "Binders",
+        "Quantity": "5974",
+        "Kelompok": "Tinggi"
+    },
+    {
+        "No": "2",
+        "Sub Category": "Paper",
+        "Quantity": "5178",
+        "Kelompok": "Tinggi"
+    },
+    {
+        "No": "3",
+        "Sub Category": "Furnishings",
+        "Quantity": "3563",
+        "Kelompok": "Tinggi"
+    },
+    {
+        "No": "4",
+        "Sub Category": "Phones",
+        "Quantity": "3289",
+        "Kelompok": "Tinggi"
+    },
+    {
+        "No": "5",
+        "Sub Category": "Storage",
+        "Quantity": "3158",
+        "Kelompok": "Tinggi"
+    },
+    {
+        "No": "6",
+        "Sub Category": "Art",
+        "Quantity": "3000",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "7",
+        "Sub Category": "Accessories",
+        "Quantity": "2976",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "8",
+        "Sub Category": "Chairs",
+        "Quantity": "2356",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "9",
+        "Sub Category": "Appliances",
+        "Quantity": "1729",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "10",
+        "Sub Category": "Labels",
+        "Quantity": "1400",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "11",
+        "Sub Category": "Tables",
+        "Quantity": "1241",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "12",
+        "Sub Category": "Fasteners",
+        "Quantity": "914",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "13",
+        "Sub Category": "Envelopes",
+        "Quantity": "906",
+        "Kelompok": "Menengah"
+    },
+    {
+        "No": "14",
+        "Sub Category": "Bookcases",
+        "Quantity": "868",
+        "Kelompok": "Rendah"
+    },
+    {
+        "No": "15",
+        "Sub Category": "Supplies",
+        "Quantity": "647",
+        "Kelompok": "Rendah"
+    },
+    {
+        "No": "16",
+        "Sub Category": "Machines",
+        "Quantity": "440",
+        "Kelompok": "Rendah"
+    },
+    {
+        "No": "17",
+        "Sub Category": "Copiers",
+        "Quantity": "234",
+        "Kelompok": "Rendah"
+    }
+]

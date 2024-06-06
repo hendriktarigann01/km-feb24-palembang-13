@@ -1,0 +1,69 @@
+[{
+  "Sub_Category": "Binders",
+  "Quantity": "5974",
+  "Kelompok": "Tinggi"
+}, {
+  "Sub_Category": "Paper",
+  "Quantity": "5178",
+  "Kelompok": "Tinggi"
+}, {
+  "Sub_Category": "Furnishings",
+  "Quantity": "3563",
+  "Kelompok": "Tinggi"
+}, {
+  "Sub_Category": "Phones",
+  "Quantity": "3289",
+  "Kelompok": "Tinggi"
+}, {
+  "Sub_Category": "Storage",
+  "Quantity": "3158",
+  "Kelompok": "Tinggi"
+}, {
+  "Sub_Category": "Art",
+  "Quantity": "3000",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Accessories",
+  "Quantity": "2976",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Chairs",
+  "Quantity": "2356",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Appliances",
+  "Quantity": "1729",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Labels",
+  "Quantity": "1400",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Tables",
+  "Quantity": "1241",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Fasteners",
+  "Quantity": "914",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Envelopes",
+  "Quantity": "906",
+  "Kelompok": "Menengah"
+}, {
+  "Sub_Category": "Bookcases",
+  "Quantity": "868",
+  "Kelompok": "Rendah"
+}, {
+  "Sub_Category": "Supplies",
+  "Quantity": "647",
+  "Kelompok": "Rendah"
+}, {
+  "Sub_Category": "Machines",
+  "Quantity": "440",
+  "Kelompok": "Rendah"
+}, {
+  "Sub_Category": "Copiers",
+  "Quantity": "234",
+  "Kelompok": "Rendah"
+}]

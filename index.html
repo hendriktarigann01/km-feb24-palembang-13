@@ -10,33 +10,35 @@
       rel="stylesheet"
     />
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div class="sidebar">
       <div class="logo">
         <img src="Logo Capstone Putih.png" />
       </div>
-      <ul class="nav-links"> 
+      <ul class="nav-links">
         <li>
-          <a href="#">
+          <a href="index.html">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Home</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="source/source.html">
             <i class="bx bx-folder-open"></i>
             <span class="links_name">Source</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="statistical/statistical.html">
             <i class="bx bx-bar-chart-alt-2"></i>
             <span class="links_name">Statistical</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="aboutus\aboutus.html">
             <i class="bx bx-user-circle"></i>
             <span class="links_name">About Us</span>
           </a>
@@ -195,6 +197,7 @@
                   <div class="button">
                     <a
                       href="https://lookerstudio.google.com/reporting/a7b86b9d-b913-4dcf-b0a3-6ee80125297d/page/ROpvD"
+                      style="margin-top: 30px"
                       >Open Folder</a
                     >
                   </div>
@@ -250,6 +253,59 @@
                     >
                   </a>
                 </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Brosina Hoffman - 6/9/2014</span><br />
+                    <span class="product">Newell 322</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Brosina Hoffman - 6/9/2014</span><br />
+                    <span class="product"
+                      >DXL Angle-View Binders with Locking Rings by
+                      Samsill</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Brosina Hoffman - 6/9/2014</span><br />
+                    <span class="product"
+                      >Belkin F5C206VTEL 6 Outlet Surge2</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Brosina Hoffman - 6/9/2014</span><br />
+                    <span class="product"
+                      >Chromcraft Rectangular Conference Tables</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Brosina Hoffman - 6/9/2014</span><br />
+                    <span class="product"
+                      >Konftel 250 Conference phone - Charcoal black</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Andrew Allen - 4/15/2017</span><br />
+                    <span class="product">Xerox 1967Irene </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="name">Maddox - 12/5/2016</span><br />
+                    <span class="product"
+                      >Fellowes PB200 Plastic Comb Binding Machine</span
+                    >
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -257,26 +313,257 @@
         <div class="bottom2">
           <div class="report1">
             <div class="head">
-              <img src="shopping-cart.png" />
+              <i class="bx bx-cart-alt"></i>
               <div class="content">
                 <div class="box-topic">Reports</div>
                 <div class="description">Top Selling Product</div>
               </div>
             </div>
-            <img class="doc" src="Top selling.png" />
+            <div class="tableTopSelling"></div>
+            <div id="paginationButtons"></div>
+            <script>
+              $(document).ready(function () {
+                let perPage = 5;
+                let currentPage = 1;
+                let data = [];
+
+                function displayData(startIndex) {
+                  $(".tableTopSelling").empty();
+                  const table = $("<table>").addClass("table");
+                  const thead = $("<thead>");
+                  const headerRow = $("<tr>");
+                  const keys = Object.keys(data[0]);
+                  keys.forEach((key) => headerRow.append($("<th>").text(key)));
+                  thead.append(headerRow);
+                  table.append(thead);
+
+                  const tbody = $("<tbody>");
+                  const endIndex = Math.min(startIndex + perPage, data.length);
+                  for (let i = startIndex; i < endIndex; i++) {
+                    const item = data[i];
+                    const row = $("<tr>");
+                    keys.forEach((key) =>
+                      row.append($("<td>").text(item[key]))
+                    );
+                    tbody.append(row);
+                  }
+                  table.append(tbody);
+                  $(".tableTopSelling").append(table);
+                }
+
+                function updatePaginationButtons() {
+                  $("#paginationButtons").empty();
+                  const totalPages = Math.ceil(data.length / perPage);
+                  let startPage = Math.max(currentPage - 1, 1);
+                  let endPage = Math.min(startPage + 2, totalPages);
+
+                  if (endPage - startPage < 2) {
+                    startPage = Math.max(endPage - 2, 1);
+                  }
+
+                  $("#paginationButtons").append(
+                    $("<button>")
+                      .text("First")
+                      .click(() => {
+                        currentPage = 1;
+                        displayData(0);
+                        updatePaginationButtons();
+                      })
+                  );
+
+                  $("#paginationButtons").append(
+                    $("<button>")
+                      .text("Prev")
+                      .click(() => {
+                        if (currentPage > 1) {
+                          currentPage--;
+                          displayData((currentPage - 1) * perPage);
+                          updatePaginationButtons();
+                        }
+                      })
+                  );
+
+                  for (let i = startPage; i <= endPage; i++) {
+                    const button = $("<button>").text(i);
+                    if (i === currentPage) {
+                      button.addClass("active");
+                    }
+                    button.click(function () {
+                      currentPage = i;
+                      displayData((currentPage - 1) * perPage);
+                      updatePaginationButtons();
+                    });
+                    $("#paginationButtons").append(button);
+                  }
+
+                  $("#paginationButtons").append(
+                    $("<button>")
+                      .text("Next")
+                      .click(() => {
+                        if (currentPage < totalPages) {
+                          currentPage++;
+                          displayData((currentPage - 1) * perPage);
+                          updatePaginationButtons();
+                        }
+                      })
+                  );
+
+                  $("#paginationButtons").append(
+                    $("<button>")
+                      .text("Last")
+                      .click(() => {
+                        currentPage = totalPages;
+                        displayData((currentPage - 1) * perPage);
+                        updatePaginationButtons();
+                      })
+                  );
+                }
+
+                fetch("data/topSelling.json", {
+                  method: "GET",
+                })
+                  .then((response) => {
+                    console.log(response.status);
+                    if (!response.ok) {
+                      throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                  })
+                  .then((json) => {
+                    data = json;
+                    displayData(0);
+                    updatePaginationButtons();
+                  })
+                  .catch((error) => console.error("Fetch error:", error));
+              });
+            </script>
           </div>
           <div class="report2">
             <div class="head">
-              <img src="price-tag.png" />
+              <i class="bx bx-purchase-tag-alt"></i>
               <div class="content">
                 <div class="box-topic">Reports</div>
                 <div class="description">Top Product Needs and Preferences</div>
               </div>
             </div>
-            <img class="doc" src="Top product.png" />
+            <div class="TopProductNeedsandPreferences"></div>
+            <div id="paginationButtons2"></div>
+            <script>
+              $(document).ready(function () {
+                let perPage = 5;
+                let currentPage = 1;
+                let data = [];
+
+                function displayData(startIndex) {
+                  $(".TopProductNeedsandPreferences").empty();
+                  const table = $("<table>").addClass("table");
+                  const thead = $("<thead>");
+                  const headerRow = $("<tr>");
+                  const keys = Object.keys(data[0]);
+                  keys.forEach((key) => headerRow.append($("<th>").text(key)));
+                  thead.append(headerRow);
+                  table.append(thead);
+
+                  const tbody = $("<tbody>");
+                  const endIndex = Math.min(startIndex + perPage, data.length);
+                  for (let i = startIndex; i < endIndex; i++) {
+                    const item = data[i];
+                    const row = $("<tr>");
+                    keys.forEach((key) =>
+                      row.append($("<td>").text(item[key]))
+                    );
+                    tbody.append(row);
+                  }
+                  table.append(tbody);
+                  $(".TopProductNeedsandPreferences").append(table);
+                }
+
+                function updatePaginationButtons2() {
+                  $("#paginationButtons2").empty();
+                  const totalPages = Math.ceil(data.length / perPage);
+                  let startPage = Math.max(currentPage - 1, 1);
+                  let endPage = Math.min(startPage + 2, totalPages);
+
+                  if (endPage - startPage < 2) {
+                    startPage = Math.max(endPage - 2, 1);
+                  }
+
+                  $("#paginationButtons2").append(
+                    $("<button>")
+                      .text("First")
+                      .click(() => {
+                        currentPage = 1;
+                        displayData(0);
+                        updatePaginationButtons2();
+                      })
+                  );
+
+                  $("#paginationButtons2").append(
+                    $("<button>")
+                      .text("Prev")
+                      .click(() => {
+                        if (currentPage > 1) {
+                          currentPage--;
+                          displayData((currentPage - 1) * perPage);
+                          updatePaginationButtons2();
+                        }
+                      })
+                  );
+
+                  for (let i = startPage; i <= endPage; i++) {
+                    const button = $("<button>").text(i);
+                    if (i === currentPage) {
+                      button.addClass("active");
+                    }
+                    button.click(function () {
+                      currentPage = i;
+                      displayData((currentPage - 1) * perPage);
+                      updatePaginationButtons2();
+                    });
+                    $("#paginationButtons2").append(button);
+                  }
+
+                  $("#paginationButtons2").append(
+                    $("<button>")
+                      .text("Next")
+                      .click(() => {
+                        if (currentPage < totalPages) {
+                          currentPage++;
+                          displayData((currentPage - 1) * perPage);
+                          updatePaginationButtons2();
+                        }
+                      })
+                  );
+
+                  $("#paginationButtons2").append(
+                    $("<button>")
+                      .text("Last")
+                      .click(() => {
+                        currentPage = totalPages;
+                        displayData((currentPage - 1) * perPage);
+                        updatePaginationButtons2();
+                      })
+                  );
+                }
+
+                fetch("data/TopProductNeedsandPreferences.json", {
+                  method: "GET",
+                })
+                  .then((response) => response.json())
+                  .then((json) => {
+                    data = json;
+                    displayData(0);
+                    updatePaginationButtons2();
+                  })
+                  .catch((error) => console.error("Fetch error:", error));
+              });
+            </script>
           </div>
         </div>
       </div>
+      <footer>
+        <p>© 2024 Thirteen Collective. All rights reserved.</p>
+      </footer>
     </section>
 
     <script>

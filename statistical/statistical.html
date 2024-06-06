@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STATISTICAL</title>
+  <link rel="stylesheet" href="stat berkotak.css">
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Google Charts API -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img src="Logo Capstone Putih.png" alt="Superstore Logo" />
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="../index.html">
+          <i class="bx bx-grid-alt"></i >
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="../source/source.html">
+          <i class="bx bx-folder-open"></i>
+          <span class="links_name">Source</span>
+        </a>
+      </li>
+      <li>
+        <a href="statistical.html" class="active">
+          <i class="bx bx-bar-chart-alt-2"></i>
+          <span class="links_name">Statistical</span>
+        </a>
+      </li>
+      <li>
+        <a href="../aboutus/aboutus.html">
+          <i class="bx bx-user-circle"></i>
+          <span class="links_name">About Us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <header>
+    <h1 class="Statistical">STATISTICAL</h1>
+  </header>
+
+  <main class="content">
+    <section class="dashboard-topprofit">
+      <div class="dashboard-heading">
+        <h1 class="Dashboard">STATISTICAL</h1>
+        <div class="boxes">
+          <div class="box">
+            <p>Total Customer <br />793</p>
+          </div>
+          <div class="box">
+            <p>Revenue <br />$ 2.297.201</p>
+          </div>
+          <div class="box">
+            <p>Profit Margin <br />286.397</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- segmen topsales -->
+      <div class="top-sales">
+        <div class="kotak-topsales">
+          <h3 class="heading-topsales">Top Sales City</h3>
+          <div class="pie-chart">
+            <div id="piechart" style="width: 100%; height: 450px;"></div>
+          </div>
+        </div>
+        <div class="kotak-topsales1">
+          <h3 class="heading-topsales">Top Sales of Sub Category Product by Year</h3>
+          
+          <div class="tabel1">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>
+                    <label for="subcategory-filter">Sub Category</label>
+                    <select id="subcategory-filter">
+                      <option value="">All</option>
+                    </select>
+                  </th>
+                  <th>
+                    <label for="year-filter">Year</label>
+                    <select id="year-filter">
+                      <option value="">All</option>
+                    </select>
+                  </th>
+                  <th>Sales</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kotak-topsales1"></div>
+      </div>
+
+      <!--segmen dropdown-->
+      <div class="dropdownnn">
+        <div class="all1"></div>
+        <div class="all2"></div>
+        <div class="alldropdown">
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Year</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu" id="yearFilter">
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Region</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu" id="regionFilter">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">City</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu" id="cityFilter">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Segment</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu" id="segmentFilter">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Sub-Category</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu" id="subCategoryFilter">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--section avg-->
+      <div class="avg">
+        <div class="kotak-avg">
+          <h3 class="heading-avg">Average Delivery by Category</h3>
+          <div class="barchart-avg-dlv">
+            <div id="barchart_material" style="width: 100%; height: 293px"></div>
+          </div>
+        </div>
+        <div class="kotak-avg">
+          <h3 class="heading-avg">Return On Investment</h3>
+          <div class="tabel2">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Product Name</th>
+                  <th>ROI</th>
+                </tr>
+              </thead>
+              <tbody id="table-body2">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kotak-avg">
+          <h3 class="heading-avg">Average Profit by Year</h3>
+          <div class="linechart1">
+            <div id="curve_chart" style="width: 100%; height: 293px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--section top profit-->
+      <div class="top-profit">
+        <div class="kotak-topprofit">
+          <h3 class="heading-topprofit">Top Profit by City</h3>
+          <div class="barchart-tpcity">
+            <div id="barchart" style="width: 100%; height: 291px"></div>
+          </div>
+        </div>
+        <div class="kotak-topprofit1">
+          <h3 class="heading-topprofit">Top Profit by Sub Category</h3>
+          <div class="barchart-tpsubcategory">
+            <div id="barchart2" style="width: 100%; height: 291px"></div>
+          </div>
+        </div>
+    </section>
+
+    <!--interpretasi avg profit-->
+    <section class="avg-profit">
+      <div class="kotak-int1">
+        <div>
+          <h3 class="heading-int-avgprofit">Average Profit by Year</h3>
+          <div class="linechart2">
+            <div id="curve_chart2" style="width: 100%; height: 291px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="kotak-int1">
+        <div class="head-int-avgprofit">
+          <h1>Average Profit Growth by Year</h1>
+        </div>
+        <div class="box-interpretasi-avg">
+          <p>Growth Rate = ((Present-Past)Past) x 100</p>
+          <p>
+            Based on analytics
+            <li>2015 : 24,5%</li>
+            <li>2016 : 32,8%</li>
+            <li>2017 : 14,2%</li>
+          </p>
+          <p>In terms of overall profit growth, 2016 showed the highest profit growth rate of 32.8%.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--interpretasi ROI-->
+    <section class="interpretasi-roi">
+      <div class="kotak-int2">
+        <h1 class="heading-int-roi">Return On Investment</h1>
+        <div class="tabel3">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Product Name</th>
+                <th>ROI</th>
+              </tr>
+            </thead>
+            <tbody id="table-body3">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="kotak-int2">
+        <div class="head-int-roi">
+          <h1>Return On Investment</h1>
+        </div>
+        <div class="box-interpretasi-roi">
+          <p>
+            Based on analytics
+            <li>The highest ROI with value of 4.33 is "I.R.I.S IRISCard Anywhere 5 Card Scanner" </li>
+            <li>The lowest ROI with value of -3.43 is "Eureka Disposable Bags for Sanitaire Vibra Groomer I Upright Vac"
+            </li>
+          </p>
+          <p>Increase discounts for products with category "Technology", especially for products with positive ROI
+            values.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--interpretasi avg delivery-->
+    <section class="avg-delivery">
+      <div class="kotak-int3">
+        <h1 class="heading-int-dlv">Average Delivery Times by Category</h1>
+        <div class="barchart-dlv2">
+          <div id="barchart_material2" style="width: 100%; height: 293px"></div>
+        </div>
+      </div>
+      <div class="kotak-int3">
+        <div class="head-int-dlv">
+          <h1>Average Delivery Duration by Mode and Segment</h1>
+        </div>
+        <div class="box-interpretasi-dlv">
+          <p class="judul">Average duration = sum of duration per segment / 3</p>
+          <div class="isi">
+            <div class="isi-kiri">
+              <p>
+                Based on analytics
+                <li>Standard Class : 5 (5 days)</li>
+                <li>Second Class : 3,26 (4 days)</li>
+                <li>First Class : 2,18 (3 days)</li>
+                <li>Same Day : 0,04 (4 hours)</li>
+              </p>
+            </div>
+            <div class="isi-kanan">
+              <p>For all customer segments, the quickest product delivery is through Same Day shipping mode. The
+                sequence of average delivery time based on the quickest to the longest shipping mode is Same Day, First
+                Class, Second Class, and Standard Class.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--interpretasi kebutuhan-->
+    <section class="kebutuhan">
+      <h1 class="kebutuhan-heading">Product Requirements and Preferences</h1>
+      <div class="tabel-kebutuhan">
+        <table class="tabel4" , border="1">
+          <thead>
+            <tr>
+              <th>Row</th>
+              <th>Customer ID</th>
+              <th>City</th>
+              <th>Region</th>
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Sub Category</th>
+              <th>Total Purchases</th>
+              <th>Total Purchases Technology</th>
+              <th>Total Purchases Unwanted</th>
+            </tr>
+          </thead>
+          <tbody id="table-body4"> </tbody>
+        </table>
+      </div>
+      <div class="int-kebutuhan">
+        <div class="box-kebutuhan1">
+          <p>Based on analytics</p>
+          <li>The "Kingston Digital DataTraveler" product is the most preferred product.</li>
+          <li>"Plantronics CS510" is the least preferred product.</li>
+        </div>
+        <div class="box-kebutuhan2">
+          <p>Based on the results, those products that are least demanded can be used as the priority target in the
+            marketing strategy to increase demand for these products.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--interpretasi clustering-->
+    <section class="clustering">
+      <h1 class="clustering-heading">Clustering Mode of Best Seller Products by Sales</h1>
+      <div class="kotak-clustering">
+        <div class="kotak-int4">
+          <div class="tabel5">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Sub Category</th>
+                  <th>Quantity</th>
+                  <th>Group</th>
+                </tr>
+              </thead>
+              <tbody id="table-body5"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kotak-int4">
+          <div class="box-int-clustering">
+            <p>Based on analytics</p>
+            <ul>
+              <li>High: 5 Sub Category (21rb Qty)</li>
+              <li>Medium: 8 Sub Category (15rb Qty)</li>
+              <li>Low: 4 Sub Category (2rb Qty)</li>
+            </ul>
+            <p>The results indicate that "Binders" is the highest selling
+              subcategory, hence categorized as the most selling products mode.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group1">
+          <p>1</p>
+        </div>
+        <div class="group2">
+          <table border="1">
+            <tr>
+              <th>Group</th>
+              <th>Profit</th>
+              <th>Sales</th>
+            </tr>
+            <tr>
+              <td>High</td>
+              <td>143129.033</td>
+              <td>927447.765</td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>88927.062</td>
+              <td>869432.900</td>
+            </tr>
+            <tr>
+              <td>Low</td>
+              <td>54340.926</td>
+              <td>500320.195</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <footer>
+      <p>© 2024 Thirteen Collective. All rights reserved.</p>
+    </footer>
+  </main>
+
+  
+
+  <script src="stat berkotak.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
