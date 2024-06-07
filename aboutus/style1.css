@@ -10,7 +10,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #b22222;
+  background: #AB0319;
   transition: all 0.5s ease;
 }
 .sidebar .logo img{
@@ -41,10 +41,6 @@
   transition: all 0.4s ease;
 }
 
-.sidebar .nav-links li a.active {
-  background: #8b0000;
-}
-
 .sidebar .nav-links li a:hover {
   background: #750000;
   transition: 0.2s ease-out;
@@ -59,13 +55,13 @@
 
 .sidebar .nav-links li a .links_name {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
 }
 .home-section {
   position: relative;
-  background: #f5f5f5;
+  background: #e8e8e8;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
@@ -200,7 +196,7 @@ nav .sidebar-button i {
 }
 
 footer {
-  background-color: #b22222; 
+  background-color: #AB0319; 
   color: #fff;
   text-align: center; 
   padding: 20px 10px; 

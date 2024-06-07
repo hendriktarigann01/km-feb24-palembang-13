@@ -12,7 +12,7 @@
   position: fixed;
   height: 100%;
   width: 240px; /* Lebar tetap */
-  background: #b22222;
+  background: #ab0319;
 }
 
 .sidebar .logo-details img {
@@ -41,10 +41,6 @@
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-}
-
-.sidebar .nav-links li a.active {
-  background: #8b0000;
 }
 
 .sidebar .nav-links li a:hover {
@@ -822,7 +818,7 @@ a {
 }
 
 footer {
-  background-color: #b22222;
+  background-color: #ab0319;
   color: #fff;
   text-align: center;
   padding: 20px 10px;
